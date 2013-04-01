@@ -14,9 +14,10 @@ SampleApp::Application.routes.draw do
   match '/signin',  to: 'sessions#new'
   match '/signout', to: 'sessions#destroy', via: :delete
       
-  match '/help',    to: 'static_pages#help'
+  #match '/help',    to: 'static_pages#help'
   match '/about',   to: 'static_pages#about'
   match '/contact', to: 'static_pages#contact'
+  match '/me',	    to: 'static_pages#me'  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
