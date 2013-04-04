@@ -19,6 +19,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(params[:user])
+    @user.donated = false
     if @user.save
       sign_in @user
       flash[:success] = "Thanks for signing up!"
