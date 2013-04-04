@@ -61,6 +61,14 @@ class UsersController < ApplicationController
     render 'show_follow'
   end
 
+  def success
+    @user = current_user
+    @user.donated = true
+    if @user.save(:validate => false)
+      sign_in @user
+    end
+    #current_user.update_attributes(:donated => true) 
+  end
   private
 
     def correct_user

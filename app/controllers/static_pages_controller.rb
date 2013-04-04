@@ -18,4 +18,5 @@ class StaticPagesController < ApplicationController
 
   def me
   end
+
 end
