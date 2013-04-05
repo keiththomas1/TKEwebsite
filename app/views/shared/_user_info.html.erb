@@ -7,3 +7,8 @@
 <span>
   <%= link_to "view my profile", current_user %>
 </span>
+<% if current_user.donated %>
+<p style="color: green;">Donated!</p>
+<% else %>
+<p style="color: red;">Hasn't donated yet.</p>
+<% end %>
