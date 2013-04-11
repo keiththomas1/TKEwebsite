@@ -1,5 +1,12 @@
 # TKE and Animal Control
 
-This is a website I made to help those participating in the 5k that my fraternity is hosting donate beforehand instead of having to bring money to the event.
+My fraternity needed a website to promote our 5K run together
+with a local animal shelter, so I coded up a quick one in rails
+using Bootstrap for the styling.
 
-- Keith
+URL: www.TKEpups.org
+
+Features:
+	- User Accounts
+	- View other Users
+	- Paypal Implementation
